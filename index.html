@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Responsive Site</title>
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+  <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--vendors files-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+  <style>
+    .navbar{
+      background: #9160a5;
+    }
+    .banner-image {
+      background:linear-gradient(rgba(145, 96, 165, 0.9), rgba(145, 96, 165, 0.9)), url('img/hero-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      height: 60vh;
+      position: relative;
+    }
+    ul li a{
+      margin-left: .9rem;
+      font-size: 1rem;
+    }
+
+    ul li a:hover{
+      color: #0dcaf0!important;
+    }
+
+    .banner-contents h1{
+      color: #fff;
+      font-size: 3rem;
+    }
+    #service{
+      background:linear-gradient(rgba(44, 198, 170, 0.9), rgba(44, 198, 170, 0.9)), url('img/services-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    .social-link ul li{
+      display: inline-block;
+      margin: 0 .1rem;
+      text-align: center;
+    }
+
+    .social-link ul li a {
+       color: #fff;
+  
+    }
+    .social-link {
+       margin-top: 1rem;
+
+    }
+    .social-link ul li a i {
+      background: #bdd1df;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      padding: .4rem;
+      font-size: 1rem;
+      transition: .7s;
+    }
+
+    .social-link ul li a i:hover {
+      background: #393939;
+      transform: rotate(360deg);
+      color: white;
+    }
+    #team{
+    background:linear-gradient(rgba(231, 240, 246, 0.9), rgba(231, 240, 246, 0.9)), url('img/team-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    footer ul li{
+      display: inline-block;
+      
+    }
+
+    footer ul li a{
+      text-decoration: none;
+      color: #fff;
+    }
+
+    #contact{
+      background:linear-gradient(rgba(52, 74, 142, 0.9), rgba(52, 74, 142, 0.9)), url('img/contact-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+    #testimonial{
+      background:linear-gradient(rgba(217, 86, 138, 0.9), rgba(217, 86, 138, 0.9)), url('img/testimonial-bg.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    
+
+    
+
+    .carousel-indicators .active{
+      background-color: #000;
+      
+    }
+  </style>
+<body>
+  <!--start header section-->
+  <header id="home">
+    <nav class="navbar fixed-top navbar-expand-md p-md-0 ">
+      <div class="container">
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="text-white fas fa-bars navbar-icon"></i></span>
+        </button>
+  
+        <a class="navbar-brand " href="#home">
+          <i class="text-white fa-2x fab fa-autoprefixer"></i>
+          
+        </a>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+  
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class=" nav-link text-white text-center text-md-left active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center text-md-left" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class=" container banner-contents text-center">
+        <h1 class="font-weight-bolder text-white mb-5">Hi there! We are the new kids on the block and we build awesome websites and mobile apps.</h1>
+        <button class="btn btn-lg btn-outline-info mr-3"><i class="fas fa-laptop-house mr-2 " onclick="location.href='#work'"></i> Work with us</button>
+        
+      </div>
+    </div>
+    
+    
+    
+  </header>
+
+  <!--end header section-->
+
+  <!--start services section-->
+
+  <section class="text-center pt-5 pb-3 text-white" id="service">
+    <div class="container">
+      <div class="header">
+        <h2>SERVICES WE PROVIDE</h2>
+        <hr style="width: 6rem; text-align: center;" class="text-center d-inline-block pb-1">
+        <p class="text-center mb-5">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+      </div>
+      <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <img src="img/flag.png" alt="Flag" class="services-icon">
+            <h3>Branding</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eligendi dolorem.</p>
+          </div>
+            
+            <div class="col-lg-3 col-md-6">
+              <img src="img/crayon.png" alt="Crayon" class="services-icon">
+              <h3>Design</h3>
+              <p>Lorem ipsum dolor amet consectetur adipisicing elit. Temporibus dolorem quas.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="img/gears.png" alt="Gears" class="services-icon">
+              <h3>Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eligendi dolorem.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <img src="img/rocket.png" alt="Rocket" class="services-icon">
+              <h3>ROCKET SCIENCE</h3>
+              <p>Lorem ipsum dolor amet consectetur adipisicing elit. Temporibus dolorem quas.</p>
+            </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!--end services section-->
+
+
+  <!--start team section-->
+  <section class="text-center pt-5 pb-3" id="team">
+    
+      <div class="container">
+        <div class="team-row">
+          <h2>MEET OUR BEAUTIFUL TEAM</h2>
+          <hr style="width: 6rem; text-align: center;" class="text-center d-inline-block pb-1">
+          <p class="text-center mb-5">We are a small team of designers and developers, who help brands with big ideas.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <img src="img/1.jpg" alt="ANNE HATHAWAY" class="rounded-circle mb-3">
+            <h3>ANNE HATHAWAY</h3>
+            <span>CEO / Marketing Guru</span>
+            <p class="small mt-2">Lorem ipsum dolor sit amet consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+            <div class="social-link ">
+              <ul >
+                <li><a href="#"><i class=" fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class=" fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class=" fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img src="img/2.jpg" alt="Kate Upton" class="rounded-circle mb-3">
+            <h3>Kate Upton</h3>
+            <span class="role">Creative Director</span>
+            <p class="small mt-2">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+            <div class="social-link">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6">
+            <img src="img/3.jpg" alt="Olivia Wilde" class="rounded-circle mb-3">
+            <h3>Olivia Wilde</h3>
+            <span class="role">Lead Designer</span>
+            <p class="small mt-2">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+            <div class="social-link">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </div>
+    
+          </div>
+    
+          <div class="col-lg-3 col-md-6">
+            <img src="img/4.jpg" alt="Ashley Greene" class="rounded-circle mb-3">
+            <h3>Ashley Greene</h3>
+            <span class="role">SEO / Developer</span>
+            <p class="small mt-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            <div class="social-link">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              </ul>
+            </div>
+          </div>
+    
+    
+        </div>
+      </div>
+  </section>
+  <!--end team section-->
+
+  <!--carosul start-->
+
+  <div class="section-caro " id="testimonial">
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="First">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">First slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="Second">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Second slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide1.jpg" class=" d-block w-100" alt="Third" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-dark">Third slide label</h5>
+              <p class="text-dark">Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!--start contact section-->
+
+  <section class="p-5 text-white" id="contact">
+    <div class="container">
+      <div class="contact-row text-center mb-3">
+        <h2>GET IN TOUCH</h2>
+        <hr style="width: 6rem; text-align: center;" class="text-center d-inline-block pb-1">
+       
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-6">
+          <p class="">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+        </div>
+        <div class="col-lg-7 col-md-6">
+          <form action="#" method="post">
+            
+            <div class="mb-3">
+              <label class="mb-2" for="name">Full Name:</label>
+              <input type="text" class="form-control"  aria-label="Last name" required> 
+            </div>
+            <div class="form-floating mb-3"> 
+              <div>
+                <label class="mb-2" for="email">Email: </label>
+              </div>
+              <input type="email" class="form-control" id="emailInput"  required> 
+              
+            </div>
+            <div class="form-floating"> 
+              <div>
+                <label class="mb-2" for="textarea">Message: </label>
+              </div>
+              <textarea name="text"  cols="30" rows="10" class="form-control" placeholder="Leave a comment here"></textarea>
+              
+                  
+            </div> 
+              <div class="mt-3">
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end contact section-->
+
+  <!--start footer section-->
+  <footer class="footer-section text-center bg-dark p-4 ">
+    <div class="container">
+      <div class="row ">
+        <ul> 
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Google+</a></li>
+          <li><a href="#">Github</a></li>
+          <li><a href="#">Behance</a></li>
+        </ul>
+    </div>
+    </div>
+  </footer>
+
+  <!--end footer section-->
+
+
+
+
+
+<!--Java starts here-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!--Java ends here-->
+
+</body>
+</html>
